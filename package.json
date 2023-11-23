@@ -12,10 +12,13 @@
     "aos": "^2.3.4",
     "gray-matter": "^4.0.3",
     "jquery": "^3.7.1",
+    "magnific-popup": "^1.1.0",
     "next": "14.0.3",
     "next-mdx-remote": "^4.4.1",
     "react": "^18",
     "react-bootstrap": "^2.9.1",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-scripts": "^5.0.1",
+    "swiper": "^11.0.5"
   }
 }
