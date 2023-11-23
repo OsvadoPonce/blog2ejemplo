@@ -37,7 +37,7 @@ function Hero() {
                   href="/ServiciosFinanzas"
                   className="link-with-icon p-0 mt-auto text-decoration-none text-warning"
                 >
-                  Leer más <i className="far fa-arrow-right"></i>
+                  Leer más <i className="fas fa-arrow-right"></i>
                 </Link>
               </div>
             </div>
@@ -54,7 +54,7 @@ function Hero() {
                   href="/ServiciosAlmacen"
                   className="link-with-icon p-0 mt-auto text-decoration-none text-warning"
                 >
-                  Leer más <i className="far fa-arrow-right"></i>
+                  Leer más <i className="fas fa-arrow-right"></i>
                 </Link>
               </div>
             </div>
@@ -71,7 +71,7 @@ function Hero() {
                   href="/ServiciosRH"
                   className="link-with-icon p-0 mt-auto text-decoration-none text-warning"
                 >
-                  Leer más <i className="far fa-arrow-right"></i>
+                  Leer más <i className="fas fa-arrow-right"></i>
                 </Link>
               </div>
             </div>

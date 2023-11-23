@@ -19,7 +19,6 @@ import team1 from "../public/img/Juan.jpg";
 import team2 from "../public/img/Jatz.jpg";
 import team3 from "../public/img/Gibran.jpg";
 
-
 const Nosotros = () => {
   useEffect(() => {
     $(document).ready(function () {
@@ -32,13 +31,11 @@ const Nosotros = () => {
       <Header />
       <>
         <section
-          className="about-header-section ptb-120 position-relative overflow-hidden bg-dark"
-          style={{
-            background: `url(${imgBackgroud1})`,
-            backgroundPosition: "center right",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
+          className="about-header-section ptb-120 position-relative overflow-hidden bg-dark">
+          <Image
+            src={imgBackgroud1}
+            style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+          />
           <div className="container">
             <div className="row">
               <div className="col-12">

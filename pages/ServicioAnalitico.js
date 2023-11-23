@@ -24,12 +24,12 @@ const ServicioAnalitico = () => {
       <>
         <section
           className="page-header position-relative overflow-hidden ptb-120 bg-dark"
-          style={{
-            background: `url(${fondo1})`,
-            backgroundPosition: "bottom left",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
+          style={{ position: 'relative', overflow: 'hidden' }}
+          >
+          <Image
+            src={fondo1}
+            style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+          />
           <div className="container">
             <div className="row">
               <div className="col-lg-8 col-md-12">
@@ -58,7 +58,7 @@ const ServicioAnalitico = () => {
                 <ul className="list-unstyled d-flex flex-wrap list-two-col mt-5">
                   <li>
                     <span>
-                      <i className="fal fa-user fa-2x text-primary mb-4" />
+                      <i className="fas fa-user fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5">Capacidad de</h3>
                     <p>
@@ -68,7 +68,7 @@ const ServicioAnalitico = () => {
                   </li>
                   <li>
                     <span>
-                      <i className="fal fa-watch fa-2x text-primary mb-4" />
+                      <i className="fas fa-watch fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5">Habilidad para</h3>
                     <p>
@@ -108,14 +108,14 @@ const ServicioAnalitico = () => {
                 <ul className="list-unstyled d-flex flex-wrap list-two-col mt-5">
                   <li>
                     <span>
-                      <i className="fal fa-comments-alt fa-2x text-primary mb-4" />
+                      <i className="fas fa-comments-alt fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5">Múltiples fuentes</h3>
                     <p>Capacidad para centralizar la información.</p>
                   </li>
                   <li>
                     <span>
-                      <i className="fal fa-headset fa-2x text-primary mb-4" />
+                      <i className="fas fa-headset fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5"> Toma de decisiones</h3>
                     <p>

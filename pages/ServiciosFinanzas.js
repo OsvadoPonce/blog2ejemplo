@@ -24,12 +24,12 @@ const ServiciosFinanzas = () => {
       <>
         <section
           className="page-header position-relative overflow-hidden ptb-120 bg-dark"
-          style={{
-            background: `url(${fondo1})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "bottom left"
-          }}
-        >
+          style={{ position: 'relative', overflow: 'hidden' }}
+          >
+            <Image
+            src={fondo1}
+            style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+          />
           <div className="container">
             <div className="row">
               <div className="col-lg-8 col-md-12">
@@ -60,7 +60,7 @@ const ServiciosFinanzas = () => {
                 <ul className="list-unstyled d-flex flex-wrap list-two-col mt-5">
                   <li>
                     <span>
-                      <i className="fal fa-user fa-2x text-primary mb-4" />
+                      <i className="fas fa-user fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5">Gastos</h3>
                     <p>
@@ -70,7 +70,7 @@ const ServiciosFinanzas = () => {
                   </li>
                   <li>
                     <span>
-                      <i className="fal fa-watch fa-2x text-primary mb-4" />
+                      <i className="fas fa-watch fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5">Utilidad</h3>
                     <p>
@@ -111,7 +111,7 @@ const ServiciosFinanzas = () => {
                 <ul className="list-unstyled d-flex flex-wrap list-two-col mt-5">
                   <li>
                     <span>
-                      <i className="fal fa-comments-alt fa-2x text-primary mb-4" />
+                      <i className="fas fa-comments-alt fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5">Cuentas por cobrar</h3>
                     <p>
@@ -120,7 +120,7 @@ const ServiciosFinanzas = () => {
                   </li>
                   <li>
                     <span>
-                      <i className="fal fa-headset fa-2x text-primary mb-4" />
+                      <i className="fas fa-headset fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5">Efectivo</h3>
                     <p>

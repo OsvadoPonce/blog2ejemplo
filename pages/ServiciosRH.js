@@ -22,15 +22,14 @@ const ServiciosRH = () => {
       <Preloader />
       <Header />
       <>
-        {/*page header section start*/}
         <section
           className="page-header position-relative overflow-hidden ptb-120 bg-dark"
-          style={{
-            background: `url(${fondo1})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "bottom left"
-          }}
-        >
+          style={{ position: 'relative', overflow: 'hidden' }}
+          >
+          <Image
+            src={fondo1}
+            style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+          />
           <div className="container">
             <div className="row">
               <div className="col-lg-8 col-md-12">
@@ -60,7 +59,7 @@ const ServiciosRH = () => {
                 <ul className="list-unstyled d-flex flex-wrap list-two-col mt-5">
                   <li>
                     <span>
-                      <i className="fal fa-user fa-2x text-primary mb-4" />
+                      <i className="fas fa-user fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5">Empleados</h3>
                     <p>
@@ -70,7 +69,7 @@ const ServiciosRH = () => {
                   </li>
                   <li>
                     <span>
-                      <i className="fal fa-watch fa-2x text-primary mb-4" />
+                      <i className="fas fa-watch fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5">Nomina</h3>
                     <p>
@@ -110,7 +109,7 @@ const ServiciosRH = () => {
                 <ul className="list-unstyled d-flex flex-wrap list-two-col mt-5">
                   <li>
                     <span>
-                      <i className="fal fa-comments-alt fa-2x text-primary mb-4" />
+                      <i className="fas fa-comments-alt fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5">Ausentismo</h3>
                     <p>
@@ -119,7 +118,7 @@ const ServiciosRH = () => {
                   </li>
                   <li>
                     <span>
-                      <i className="fal fa-headset fa-2x text-primary mb-4" />
+                      <i className="fas fa-headset fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5">Tipo de empleado</h3>
                     <p>
