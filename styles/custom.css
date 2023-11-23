@@ -1,0 +1,25 @@
+  .btn-primary {
+    color: #fff;
+    background-color: #145374;
+    border-color: #145374;
+    -webkit-box-shadow: 0 11px 18px -8px #99aab5;
+            box-shadow: 0 11px 18px -8px #99aab5;
+  }
+
+  .btn-primary:hover {
+    color: #145374;
+    background-color: #ffcc4d;
+    border-color: #ffcc4d ;
+  }
+
+  .btn-outline-primary {
+    color: #145374;
+    border-color: #145374;
+  }
+
+  .btn-outline-primary:hover {
+    color: #145374;
+    background-color: #ffcc4d;
+    border-color: #ffcc4d;
+  }
+
