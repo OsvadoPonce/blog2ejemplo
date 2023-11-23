@@ -108,7 +108,7 @@ function Hero() {
                 <ul
                   className="list-unstyled d-flex flex-wrap list-two-col mb-0"
                   data-aos="fade-up"
-                  dataAosDelay="50"
+                  data-aos-delay="50"
                 >
                   <li>
                     <div className="icon-box">
@@ -142,14 +142,14 @@ function Hero() {
                       className="img-fluid rounded-custom position-relative"
                       alt="feature-image"
                       data-aos="fade-up"
-                      dataAosDelay="50"
+                      data-aos-delay="50"
                     />
                     <Image
                       src={PagWeb2}
                       className="img-fluid rounded-custom shadow position-absolute bottom--100 right--100 hide-medium"
                       alt="feature-image"
                       data-aos="fade-up"
-                      dataAosDelay="100"
+                      data-aos-delay="100"
                     />
                   </Container>
                   <Container className="position-absolute bg-dark-soft z--1 dot-mask dm-size-12 dm-wh-250 top-left"></Container>
@@ -176,7 +176,7 @@ function Hero() {
                 <ul
                   className="list-unstyled d-flex flex-wrap list-two-col mb-0"
                   data-aos="fade-up"
-                  dataAosDelay="50"
+                  data-aos-delay="50"
                 >
                   <li>
                     <div className="icon-box">
@@ -207,14 +207,14 @@ function Hero() {
                       className="img-fluid rounded-custom position-relative"
                       alt="feature-image"
                       data-aos="fade-up"
-                      dataAosDelay="50"
+                      data-aos-delay="50"
                     />
                     <Image
                       src={PagWeb20}
                       className="img-fluid rounded-custom shadow position-absolute top--100 left--100 hide-medium"
                       alt="feature-image"
                       data-aos="fade-up"
-                      dataAosDelay="100"
+                      data-aos-delay="100"
                     />
                   </Container>
                   <Container className="position-absolute bg-dark-soft z--1 dot-mask dm-size-12 dm-wh-250 bottom-right" />
@@ -236,14 +236,14 @@ function Hero() {
                       className="img-fluid rounded-custom position-relative"
                       alt="feature-image"
                       data-aos="fade-up"
-                      dataAosDelay="50"
+                      data-aos-delay="50"
                     />
                     <Image
                       src={PagWeb30}
                       className="img-fluid rounded-custom shadow position-absolute top--100 left--100 hide-medium"
                       alt="feature-image"
                       data-aos="fade-up"
-                      dataAosDelay="100"
+                      data-aos-delay="100"
                     />
                   </Container>
                   <Container className="position-absolute bg-dark-soft z--1 dot-mask dm-size-12 dm-wh-250 bottom-right" />
@@ -263,7 +263,7 @@ function Hero() {
                 <ul
                   className="list-unstyled d-flex flex-wrap list-two-col mt-5"
                   data-aos="fade-up"
-                  dataAosDelay="100"
+                  data-aos-delay="100"
                 >
                   <li>
                     <div className="icon-box">

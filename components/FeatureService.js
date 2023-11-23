@@ -20,7 +20,7 @@ function FeatureService() {
               <div
                 className="feature-card bg-white   shadow-sm highlight-card rounded-custom p-5"
                 data-aos="fade-up"
-                dataAosDelay="50"
+                data-aos-delay="50"
               >
                 <div className="icon-box d-inline-block rounded-circle bg-primary-soft mb-32">
                   <i className="fal fa-analytics icon-sm text-primary"></i>
@@ -74,7 +74,7 @@ function FeatureService() {
               <div
                 className="feature-card bg-white   shadow-sm rounded-custom p-5"
                 data-aos="fade-up"
-                dataAosDelay="50"
+                data-aos-delay="50"
               >
                 <div className="icon-box d-inline-block rounded-circle bg-success-soft mb-32">
                   <i className="fal fa-file-chart-line icon-sm text-success"></i>
@@ -95,7 +95,7 @@ function FeatureService() {
               <div
                 className="feature-card bg-white   shadow-sm rounded-custom p-5"
                 data-aos="fade-up"
-                dataAosDelay="50"
+                data-aos-delay="50"
               >
                 <div className="icon-box d-inline-block rounded-circle bg-danger-soft mb-32">
                   <i className="fal fa-user-friends icon-sm text-danger"></i>
@@ -117,7 +117,7 @@ function FeatureService() {
               <div
                 className="feature-card bg-white   shadow-sm rounded-custom p-5"
                 data-aos="fade-up"
-                dataAosDelay="50"
+                data-aos-delay="50"
               >
                 <div className="icon-box d-inline-block rounded-circle bg-dark-soft mb-32">
                   <i className="fal fa-spell-check icon-sm text-dark"></i>
@@ -139,7 +139,7 @@ function FeatureService() {
               <div
                 className="feature-card bg-white   shadow-sm rounded-custom p-5"
                 data-aos="fade-up"
-                dataAosDelay="50"
+                data-aos-delay="50"
               >
                 <div className="icon-box d-inline-block rounded-circle bg-warning-soft mb-32">
                   <i className="fal fa-cog icon-sm text-warning"></i>

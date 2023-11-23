@@ -103,23 +103,23 @@ function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link id="link" href="/pages/Services" className="nav-link">
+                    <Link id="link" href="/Services" className="nav-link">
                         Servicios
                     </Link>
                   </li>
                   <li>
-                    <Link id="link" href="/pages/Precios" className="nav-link">
+                    <Link id="link" href="/Precios" className="nav-link">
                       Precios
                     </Link>
                   </li>
                   <li>
-                    <Link id="link" href="/pages/Nosotros" className="nav-link">
+                    <Link id="link" href="/Nosotros" className="nav-link">
                         Sobre nosotros
                     </Link>
                   </li>
                 </ul>
                 <div className="action-btns mt-4 ps-3">
-                  <Link id="link" href="/pages/Blog" className="btn btn-primary">
+                  <Link id="link" href="/Blog" className="btn btn-primary">
                     Swarm Blog
                   </Link>
                 </div>
