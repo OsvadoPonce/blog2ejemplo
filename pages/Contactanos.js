@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Footer2 from "../components/Footer2";
+import Head from "next/head";
+import Preloader from "../components/Preloader";
+import $ from "jquery";
 
 import imgBackgroud1 from "../public/img/page-header-bg.svg";
 import shape1 from "../public/img/shape/contact-us-bg.svg";
@@ -10,18 +13,28 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Contactanos = () => {
+  useEffect(() => {
+    $(document).ready(function () {
+      $("#preloader").delay(100).fadeOut("fade");
+    });
+  }, []);
   return (
     <div>
+      <Preloader/>
       <Header />
       <>
+      <Head>
+        <title>Contactanos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      
         <section
-          className="page-header position-relative overflow-hidden ptb-120 bg-dark"
-          style={{
-            background: `url(${imgBackgroud1})`,
-            backgroundPosition: "center right",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
+          className="page-header position-relative overflow-hidden ptb-120 bg-dark">
+          <Image
+            src={imgBackgroud1}
+            style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+          />
           <div className="container">
             <div className="row">
               <div className="col-lg-6 col-md-12">
@@ -41,7 +54,7 @@ const Contactanos = () => {
             <div className="row justify-content-center">
               <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
                 <div className="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100">
-                  <span className="fad fa-comment-alt-lines fa-3x text-primary" />
+                  <span className="fas fa-comment-alt-lines fa-3x text-primary" />
                   <div className="contact-promo-info mb-4">
                     <h5>Mandanos un mensaje</h5>
                     <p>
@@ -60,7 +73,7 @@ const Contactanos = () => {
               </div>
               <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
                 <div className="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100">
-                  <span className="fad fa-envelope fa-3x text-primary" />
+                  <span className="fas fa-envelope fa-3x text-primary" />
                   <div className="contact-promo-info mb-4">
                     <h5>Envianos un mail</h5>
                     <p>
@@ -79,7 +92,7 @@ const Contactanos = () => {
               </div>
               <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
                 <div className="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100">
-                  <span className="fad fa-phone fa-3x text-primary" />
+                  <span className="fas fa-phone fa-3x text-primary" />
                   <div className="contact-promo-info mb-4">
                     <h5>Llámanos</h5>
                     <p>

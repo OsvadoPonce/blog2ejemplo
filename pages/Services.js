@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Head from "next/head";
 import Image from "next/image";
 import FeatureService from "../components/FeatureService";
 import Header from "../components/Header";
@@ -17,6 +18,11 @@ const Servicios = () => {
 
   return (
     <div>
+      <Head>
+        <title>SwarmTech</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Preloader />
       <Header />
       <>

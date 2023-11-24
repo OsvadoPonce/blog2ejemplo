@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -29,6 +30,11 @@ const Nosotros = () => {
     <div>
       <Preloader />
       <Header />
+      <Head>
+        <title>Nosotros</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <>
         <section
           className="about-header-section ptb-120 position-relative overflow-hidden bg-dark">

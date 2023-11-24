@@ -36,7 +36,7 @@ function Header() {
             className="navbar-toggler position-absolute right-0 border-0 "
             onClick={handleOffcanvas}
           >
-            <span className="far fa-bars"></span>
+            <span className="fas fa-bars"></span>
           </Link>
 
           <div className="clearfix"></div>
@@ -94,7 +94,7 @@ function Header() {
                   className="close-btn text-danger"
                   onClick={handleOffcanvas}
                 >
-                  <i className="far fa-close"></i>
+                  <i className="fas fa-close"></i>
                 </button>
                 <ul className="nav col-12 col-md-auto justify-content-center main-menu">
                   <li>

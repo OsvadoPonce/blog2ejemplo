@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import $ from "jquery";
+import Head from "next/head";
 
 import Preloader from "../components/Preloader";
 import Header from "../components/Header";
@@ -31,6 +32,11 @@ const Index = () => {
   
   return (
     <div>
+      <Head>
+        <title>SwarmTech</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Preloader />
       <Header />
       <Hero />

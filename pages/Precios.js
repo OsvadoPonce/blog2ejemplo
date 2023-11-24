@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -19,6 +20,12 @@ const Precios = () => {
   }, []);
   return (
     <div>
+      <Head>
+        <title>SwarmTech</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <Preloader />
       <Header />
       <>
