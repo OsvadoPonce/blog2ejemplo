@@ -17,8 +17,8 @@ export const MdxPage = ({ children }) => {
       {children}
       <style jsx>{`
         .mdx-page {
-          background-color: white;
-          color: red;
+          background-color: black;
+          color: white;
         }
       `}</style>
       <Footer/>
