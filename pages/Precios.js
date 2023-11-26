@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import Preloader from "../components/Preloader";
 import $ from "jquery";
 
-import fondo1 from "../public/img/page-header-bg.svg";
 import shape1 from "../public/img/shape/dot-big-square.svg";
 import shape2 from "../public/img/shape/dot-big-square.svg";
 
@@ -29,14 +28,14 @@ const Precios = () => {
       <Preloader />
       <Header />
       <>
-        <section
+      <section
           className="page-header position-relative overflow-hidden ptb-120 bg-dark"
-          style={{ position: 'relative', overflow: 'hidden' }}
-          >
-            <Image
-            src={fondo1}
-            style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
-          />
+          style={{
+            backgroundImage: "url(/img/page-header-bg.svg)",
+            backgroundPosition: "bottom left",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
           <div className="container">
             <div className="row">
               <div className="col-lg-8 col-md-12">

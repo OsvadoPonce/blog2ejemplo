@@ -8,7 +8,6 @@ import Footer2 from "../components/Footer2";
 import Preloader from "../components/Preloader";
 import $ from "jquery";
 
-import fondo1 from "../public/img/page-header-bg.svg";
 import shape1 from "../public/img/3040X2048.png";
 import shape2 from "../public/img/931X604.png";
 
@@ -30,12 +29,11 @@ const ServicioAnalitico = () => {
       <>
         <section
           className="page-header position-relative overflow-hidden ptb-120 bg-dark"
-          style={{ position: 'relative', overflow: 'hidden' }}
-          >
-          <Image
-            src={fondo1}
-            style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
-          />
+          style={{
+            backgroundImage: "url(/img/page-header-bg.svg)",
+            backgroundPosition: "bottom left",
+            backgroundRepeat: "no-repeat",
+          }}>
           <div className="container">
             <div className="row">
               <div className="col-lg-8 col-md-12">
@@ -64,7 +62,7 @@ const ServicioAnalitico = () => {
                 <ul className="list-unstyled d-flex flex-wrap list-two-col mt-5">
                   <li>
                     <span>
-                      <i className="fas fa-user fa-2x text-primary mb-4" />
+                      <i className="fa-light fa-user fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5">Capacidad de</h3>
                     <p>
@@ -74,7 +72,7 @@ const ServicioAnalitico = () => {
                   </li>
                   <li>
                     <span>
-                      <i className="fas fa-watch fa-2x text-primary mb-4" />
+                      <i className="fa-light fa-watch fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5">Habilidad para</h3>
                     <p>
@@ -114,14 +112,14 @@ const ServicioAnalitico = () => {
                 <ul className="list-unstyled d-flex flex-wrap list-two-col mt-5">
                   <li>
                     <span>
-                      <i className="fas fa-comments-alt fa-2x text-primary mb-4" />
+                      <i className="fa-light fa-comments-alt fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5">Múltiples fuentes</h3>
                     <p>Capacidad para centralizar la información.</p>
                   </li>
                   <li>
                     <span>
-                      <i className="fas fa-headset fa-2x text-primary mb-4" />
+                      <i className="fa-light fa-headset fa-2x text-primary mb-4" />
                     </span>
                     <h3 className="h5"> Toma de decisiones</h3>
                     <p>

@@ -26,8 +26,29 @@ const Nosotros = () => {
       $("#preloader").delay(100).fadeOut("fade");
     });
   }, []);
+
+  const handleMouseMove = (e) => {
+    const { clientX, clientY } = e;
+    const x = (window.innerWidth - clientX) / 50;
+    const y = (window.innerHeight - clientY) / 50;
+
+    // Aplica transformación a las imágenes
+    document.querySelector(
+      ".color-shape-2"
+    ).style.transform = `translate(${x}px, ${y}px)`;
+    document.querySelector(
+      ".color-shape-3"
+    ).style.transform = `translate(${x}px, ${y}px)`;
+  };
+
+  const handleMouseLeave = () => {
+    // Restablece la transformación cuando el mouse sale de las imágenes
+    document.querySelector(".color-shape-2").style.transform = "translate(1, 1)";
+    document.querySelector(".color-shape-3").style.transform = "translate(1, 1)";
+  };
+
   return (
-    <div>
+    <div onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
       <Preloader />
       <Header />
       <Head>
@@ -37,11 +58,13 @@ const Nosotros = () => {
       </Head>
       <>
         <section
-          className="about-header-section ptb-120 position-relative overflow-hidden bg-dark">
-          <Image
-            src={imgBackgroud1}
-            style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
-          />
+          className="about-header-section ptb-120 position-relative overflow-hidden bg-dark"
+          style={{
+            backgroundImage: "url(/img/page-header-bg.svg)",
+            backgroundPosition: "center right",
+            backgroundRepeat: "no-repeat",
+          }}
+          >
           <div className="container">
             <div className="row">
               <div className="col-12">
@@ -80,6 +103,8 @@ const Nosotros = () => {
                       src={imgswarm}
                       alt="about"
                       className="rounded-custom about-img-last shadow"
+                      height="650"
+                      width="1000"
                     />
                   </div>
                 </div>
@@ -119,12 +144,13 @@ const Nosotros = () => {
               <div className="col-lg-6 col-md-12 order-lg-0">
                 <div className="story-grid-wrapper position-relative">
                   {/*animated shape start*/}
-                  <ul className="position-absolute animate-element parallax-element shape-service d-none d-lg-block">
+
+                  <ul className="position-absolute animate-element shape-service d-none d-lg-block">
                     <li className="layer" data-depth="0.02">
                       <Image
                         src={shape1}
                         alt="shape"
-                        className="img-fluid position-absolute color-shape-2 z-5"
+                        className="img-fluid position-absolute color-shape-2"
                       />
                     </li>
                     <li className="layer" data-depth="0.03">
@@ -135,6 +161,7 @@ const Nosotros = () => {
                       />
                     </li>
                   </ul>
+                  
                   {/*animated shape end*/}
                   <div className="story-grid rounded-custom bg-dark overflow-hidden position-relative">
                     <div className="story-item bg-light border">

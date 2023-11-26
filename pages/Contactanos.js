@@ -5,7 +5,6 @@ import Head from "next/head";
 import Preloader from "../components/Preloader";
 import $ from "jquery";
 
-import imgBackgroud1 from "../public/img/page-header-bg.svg";
 import shape1 from "../public/img/shape/contact-us-bg.svg";
 
 import contactUs from "../public/img/contact-us-img-1.svg";
@@ -30,11 +29,12 @@ const Contactanos = () => {
       </Head>
       
         <section
-          className="page-header position-relative overflow-hidden ptb-120 bg-dark">
-          <Image
-            src={imgBackgroud1}
-            style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
-          />
+          className="page-header position-relative overflow-hidden ptb-120 bg-dark"
+          style={{
+            backgroundImage: "url(/img/page-header-bg.svg)",
+            backgroundPosition: "bottom left",
+            backgroundRepeat: "no-repeat",
+          }}>
           <div className="container">
             <div className="row">
               <div className="col-lg-6 col-md-12">
@@ -54,13 +54,14 @@ const Contactanos = () => {
             <div className="row justify-content-center">
               <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
                 <div className="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100">
-                  <span className="fas fa-comment-alt-lines fa-3x text-primary" />
+                  <span className="fa-light fa-message-lines fa-3x text-primary" />
                   <div className="contact-promo-info mb-4">
                     <h5>Mandanos un mensaje</h5>
                     <p>
                       Tenemos expertos esperando para ayudarte de{" "}
-                      <strong>lunes a viernes</strong> de
-                      <strong>9am to 5pm</strong>
+                      <strong>lunes a viernes</strong> de 
+                      <br/>
+                      <strong>9 am a 5pm</strong>
                     </p>
                   </div>
                   <Link id="link"
@@ -73,12 +74,12 @@ const Contactanos = () => {
               </div>
               <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
                 <div className="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100">
-                  <span className="fas fa-envelope fa-3x text-primary" />
+                  <span className="fa-light fa-envelope fa-3x text-primary" />
                   <div className="contact-promo-info mb-4">
                     <h5>Envianos un mail</h5>
                     <p>
                       Simplemente envíanos un correo electrónico a{" "}
-                      <strong>ventas@swarmtech.com.mx</strong>y recibirás una
+                      <strong>ventas@swarmtech.com.mx</strong> y recibirás una
                       respuesta en 24 horas
                     </p>
                   </div>
@@ -92,13 +93,14 @@ const Contactanos = () => {
               </div>
               <div className="col-lg-4 col-md-6 mt-4 mt-lg-0">
                 <div className="contact-us-promo p-5 bg-white rounded-custom custom-shadow text-center d-flex flex-column h-100">
-                  <span className="fas fa-phone fa-3x text-primary" />
+                  <span className="fa-light fa-phone fa-3x text-primary" />
                   <div className="contact-promo-info mb-4">
                     <h5>Llámanos</h5>
                     <p>
                       Llámanos, nuestros expertos están a su disposición{" "}
                       <strong>lunes a viernes</strong> de
-                      <strong>9am to 5pm</strong>
+                      <br/>
+                      <strong>9 am a 5 pm</strong>
                     </p>
                   </div>
                   <Link id="link" href="tel:6567769353" className="btn btn-link mt-auto">

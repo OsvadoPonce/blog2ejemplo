@@ -68,7 +68,7 @@ function FeatureService() {
                   href="/ServicioAnalitico"
                   className="link-with-icon text-decoration-none mt-3"
                 >
-                  Ver detalles <i className="far fa-arrow-right"></i>
+                  Ver detalles <i className="fas fa-arrow-right"></i>
                 </Link>
               </div>
               <div
@@ -89,7 +89,7 @@ function FeatureService() {
                   href="/ServicioScheduler"
                   className="link-with-icon text-decoration-none mt-3"
                 >
-                  Ver detalles <i className="far fa-arrow-right"></i>
+                  Ver detalles <i className="fas fa-arrow-right"></i>
                 </Link>
               </div>
               <div
@@ -111,7 +111,7 @@ function FeatureService() {
                   href="/ServicioVRP"
                   className="link-with-icon text-decoration-none mt-3"
                 >
-                  Ver detalles <i className="far fa-arrow-right"></i>
+                  Ver detalles <i className="fas fa-arrow-right"></i>
                 </Link>
               </div>
               <div
@@ -133,7 +133,7 @@ function FeatureService() {
                   href="/ServicioPicking"
                   className="link-with-icon text-decoration-none mt-3"
                 >
-                  Ver detalles <i className="far fa-arrow-right"></i>
+                  Ver detalles <i className="fas fa-arrow-right"></i>
                 </Link>
               </div>
               <div
@@ -155,7 +155,7 @@ function FeatureService() {
                   href="/ServicioDetector"
                   className="link-with-icon text-decoration-none mt-3"
                 >
-                  Ver detalles <i className="far fa-arrow-right"></i>
+                  Ver detalles <i className="fas fa-arrow-right"></i>
                 </Link>
               </div>
             </div>
