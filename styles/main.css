@@ -27411,7 +27411,7 @@ fieldset:disabled .btn {
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(/public/fonts/fa-brands-400.woff2) format("woff2"), url(/public/fonts/fa-brands-400.woff) format("woff"), url(/public/fonts/fa-brands-400.woff) format("truetype");
+  src: url('/fonts/fa-brands-400.woff2') format("woff2"), url('/fonts/fa-brands-400.woff') format("woff"), url('/fonts/fa-brands-400.woff') format("truetype");
 }
 
 /* line 8460, src/assets/scss/vendors/fontawesome-all.min.css */
@@ -29698,7 +29698,7 @@ fieldset:disabled .btn {
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url(/public/fonts/fa-duotone-900.woff2) format("woff2"), url(/public/fonts/fa-duotone-900.woff) format("woff"), url(/public/fonts/fa-duotone-900.woff) format("truetype");
+  src: url('/fonts/fa-duotone-900.woff2') format("woff2"), url('/fonts/fa-duotone-900.woff') format("woff"), url('/fonts/fa-duotone-900.woff') format("truetype");
 }
 
 /* line 9840, src/assets/scss/vendors/fontawesome-all.min.css */
@@ -46154,7 +46154,7 @@ fieldset:disabled .btn {
   font-style: normal;
   font-weight: 300;
   font-display: block;
-  src: url(/public/fonts/fa-light-300.woff2) format("woff2"), url(/public/fonts/fa-light-300.woff) format("woff"), url(/public/fonts/fa-light-300.woff) format("truetype");
+  src: url('/fonts/fa-light-300.woff2') format("woff2"), url('/fonts/fa-light-300.woff') format("woff"), url('/fonts/fa-light-300.woff') format("truetype");
 }
 
 /* line 21431, src/assets/scss/vendors/fontawesome-all.min.css */
@@ -46168,7 +46168,7 @@ fieldset:disabled .btn {
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(/public/fonts/fa-regular-400.woff2) format("woff2"), url(/public/fonts/fa-regular-400.woff) format("woff"), url(/public/fonts/fa-regular-400.woff) format("truetype");
+  src: url('/fonts/fa-regular-400.woff2') format("woff2"), url('/fonts/fa-regular-400.woff') format("woff"), url('/fonts/fa-regular-400.woff') format("truetype");
 }
 
 /* line 21444, src/assets/scss/vendors/fontawesome-all.min.css */
@@ -46190,7 +46190,7 @@ fieldset:disabled .btn {
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url(/public/fonts/fa-solid-900.woff2) format("woff2"), url(/public/fonts/fa-solid-900.woff) format("woff"), url(/public/fonts/fa-solid-900.woff) format("truetype");
+  src: url('/fonts/fa-solid-900.woff2') format("woff2"), url('/fonts/fa-solid-900.woff') format("woff"), url('/fonts/fa-solid-900.woff') format("truetype");
 }
 
 /* line 21463, src/assets/scss/vendors/fontawesome-all.min.css */
@@ -46204,7 +46204,7 @@ fieldset:disabled .btn {
   font-style: normal;
   font-weight: 100;
   font-display: block;
-  src: url(/public/fonts/fa-thin-100.woff2) format("woff2"), url(/public/fonts/fa-thin-100.woff) format("woff"), url(/public/fonts/fa-thin-100.woff) format("truetype");
+  src: url('/fonts/fa-thin-100.woff2') format("woff2"), url('/fonts/fa-thin-100.woff') format("woff"), url('/fonts/fa-thin-100.woff') format("truetype");
 }
 
 /* line 21476, src/assets/scss/vendors/fontawesome-all.min.css */
@@ -50168,7 +50168,7 @@ select.custom-select {
 
 /* line 935, src/assets/scss/custom/_style.scss */
 select.form-select {
-  background-image: url(/public/img/dropdown-arrow.svg);
+  background-image: url('/img/dropdown-arrow.svg');
 }
 
 /* line 939, src/assets/scss/custom/_style.scss */
@@ -51696,8 +51696,8 @@ li.setup-process-item:not(:last-child):before {
 =======================*/
 /* line 2003, src/assets/scss/custom/_style.scss */
 .dot-mask {
-  -webkit-mask-image: url(/public/img/dots.svg);
-  mask-image: url(/public/img/dots.svg);
+  -webkit-mask-image: url('/img/dots.svg');
+  mask-image: url('/img/dots.svg');
 }
 
 /* line 2007, src/assets/scss/custom/_style.scss */
@@ -52048,7 +52048,7 @@ li.setup-process-item:not(:last-child):before {
 
 /* line 2267, src/assets/scss/custom/_style.scss */
 .feature-img-shape-top-right:before {
-  background-image: url(/public/img/shape/dot-big-square.svg);
+  background-image: url('/img/shape/dot-big-square.svg');
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
