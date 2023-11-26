@@ -9,7 +9,6 @@ import PagWeb20 from "../public/img/img 2 pasg web.png";
 import PagWeb31 from "../public/img/Img 3.1 pag web.png";
 import PagWeb30 from "../public/img/Img 3pag web.png";
 
-import "aos/dist/aos";
 import Link from "next/link";
 import Hero2 from "../components/Hero2";
 function Hero() {
