@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Header from "./Header";
-import Footer from "./Footer2";
+import Footer from "./Footer";
 import Preloader from "./Preloader";
 import $ from "jquery";
 
@@ -11,18 +11,19 @@ export const MdxPage = ({ children }) => {
     });
   }, []);
   return (
-    <div className="mdx-page">
+    <div>
       <Preloader />
-      <Header/>
-      {children}
-      <style jsx>{`
-        .mdx-page {
-          background-color: black;
-          color: white;
-        }
-      `}</style>
-      <Footer/>
+      <Header />
+      <div className="mdx-page">
+        {children}
+        <style jsx>{`
+          .mdx-page {
+            background-color: black;
+            color: white;
+          }
+        `}</style>
+      </div>
+      <Footer />
     </div>
   );
 };
-
