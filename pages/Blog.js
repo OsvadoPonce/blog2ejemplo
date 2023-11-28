@@ -31,6 +31,27 @@ const Blog = ({ posts }) => {
 
       <Preloader />
       <Header />
+      <section
+          className="page-header position-relative overflow-hidden ptb-120 bg-dark"
+          style={{
+            backgroundImage: "url(/img/page-header-bg.svg)",
+            backgroundPosition: "bottom left",
+            backgroundRepeat: "no-repeat",
+          }}>
+
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-8 col-md-12">
+              <h1 className="display-5 fw-bold">SwarmTech Blog</h1>
+                <p className="lead">
+                 
+                 Somos especialistas en Inteligencia Artificial
+                </p>
+              </div>
+            </div>
+            <div className="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5" />
+          </div>
+        </section>
       <main className="masonary-blog-section ptb-120">
         <div className="container">
           <div className="row">
