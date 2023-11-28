@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 
-import shape2 from "../public/img/SwarmLogo.png"
+import shape2 from "../public/img/blog/blog-2.jpg"
 
 import Preloader from "../components/Preloader";
 import $ from "jquery";
