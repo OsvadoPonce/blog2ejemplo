@@ -33,7 +33,15 @@ export const MdxPage = ({ children, title }) => {
           <div className="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5"></div>
         </div>
       </section>
-      <div className="mdx-content">{children}</div>
+     <section className="blog-details ptb-120">
+     <div className="container">
+      <div className="row justify-content-between">
+          <div className="col-lg-8 pe-lg-5">
+          {children}
+          </div>
+        </div>
+      </div>
+     </section>
       <Footer/>
     </div>
   );
