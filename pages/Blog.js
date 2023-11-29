@@ -75,7 +75,7 @@ const Blog = ({ posts }) => {
                     <div className="row justify-content-center">
                         <div className="col-lg-6 col-md-12">
                             <div className="style-guide-heading text-center">
-                                <h2>Home Page Style</h2>
+                                <h2>Home Posts SwarmTech</h2>
                             </div>
                         </div>
                     </div>
