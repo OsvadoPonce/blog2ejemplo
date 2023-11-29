@@ -21,6 +21,11 @@ const Blog = ({ posts }) => {
       $("#preloader").delay(100).fadeOut("fade");
     });
   }, []);
+
+  const width = 413.7;
+  const height = 224;
+  const widthA = 40;
+  const heightA = 40;
   return (
     <div>
       <Head>
@@ -52,6 +57,31 @@ const Blog = ({ posts }) => {
             <div className="bg-circle rounded-circle circle-shape-3 position-absolute bg-dark-light right-5" />
           </div>
         </section>
+        <section className="blog-details ptb-120" >
+        <div className="row justify-content-center">
+                        <div className="col-lg-6 col-md-10">
+                            <div className="section-heading text-center">
+                                <h4 className="h5 text-primary">Latest News</h4>
+                                <h2>Check our Latest Article</h2>
+                                <p>Dynamically pursue process improvements
+                                    develop end-to-end customer service impactful action items and web-enabled markets.</p>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <div className="style-guide">
+            <div className="bg-primary-soft ptb-60">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-6 col-md-12">
+                            <div className="style-guide-heading text-center">
+                                <h2>Home Page Style</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       <main className="masonary-blog-section ptb-120">
         <div className="container">
           <div className="row">
@@ -59,7 +89,7 @@ const Blog = ({ posts }) => {
               <div key={post.slug} className="col-lg-4 col-md-6">
                 <div className="single-article rounded-custom my-3">
                   <Link id="link" href={`/${post.slug}`} className="article-img">
-                    <Image src={shape2} alt="article" className="img-fluid" />
+                    <Image src={`/${post.imgPost}`} width={width}  height={height}  alt="img-article" className="img-fluid" />
                   </Link>
 
                   <div className="article-content p-4">
@@ -69,6 +99,8 @@ const Blog = ({ posts }) => {
                         {post.title}
                       </h2>
                     </Link>
+                    <Image src={`/${post.image}`} alt="img-author" width={widthA}  height={heightA} className="img-fluid shadow-sm rounded-circle"/>
+
                     <p className="limit-2-line-text">{post.excerpt}</p>
                     
                     <Link href={`/${post.slug}`}>
