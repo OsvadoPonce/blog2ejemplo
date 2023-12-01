@@ -6,8 +6,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 
-import shape2 from "../public/img/blog/blog-2.jpg"
-
 import Preloader from "../components/Preloader";
 import $ from "jquery";
 
@@ -15,7 +13,7 @@ import { getAllFilesMetadata } from "@/lib/mdx";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const Blog = ({ posts }) => {
+const Blog = ({ posts, currentPage, totalPages }) => {
   useEffect(() => {
     $(document).ready(function () {
       $("#preloader").delay(100).fadeOut("fade");
@@ -121,6 +119,42 @@ const Blog = ({ posts }) => {
           </div>
         </div>
       </main>
+      <div className="container">
+  <div className="row justify-content-center align-items-center mt-5">
+    <div className="col-auto my-1">
+      {/* Enlace a la página anterior */}
+      {currentPage > 0 && (
+        <Link legacyBehavior href={`/blog/page/${currentPage - 1}`}>
+          <a className="btn btn-soft-primary btn-sm">Previous</a>
+        </Link>
+      )}
+    </div>
+    <div className="col-auto my-1">
+      <nav>
+        <ul className="pagination rounded mb-0">
+          {Array.from({ length: totalPages }, (_, index) => (
+            <li
+              key={index}
+              className={`page-item ${index + 1 === currentPage ? "active" : ""}`}
+            >
+              <Link legacyBehavior href={`/blog/page/${index + 1}`}>
+                <a className="page-link">{index + 1}</a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
+    <div className="col-auto my-1">
+      {/* Enlace a la página siguiente */}
+      {currentPage < totalPages && (
+        <Link legacyBehavior href={`/blog/page/${currentPage + 1}`}>
+          <a className="btn btn-soft-primary btn-sm">Next</a>
+        </Link>
+      )}
+    </div>
+  </div>
+</div>
       <Footer />
     </div>
   );
@@ -131,9 +165,17 @@ export default Blog;
 export async function getStaticProps() {
   const posts = await getAllFilesMetadata();
 
+  const postsPerPage = 6;
+  const totalPages =Math.ceil(posts.length/ postsPerPage);
+  const currentPage=1;
+
+  const paginatedPosts = posts.slice(0, postsPerPage);
+
   return {
     props: {
-      posts,
+      posts: paginatedPosts,
+      currentPage,
+      totalPages
     },
   };
 }
