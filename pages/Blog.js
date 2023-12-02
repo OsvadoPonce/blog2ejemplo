@@ -27,7 +27,7 @@ const Blog = ({ posts }) => {
   const widthA = 40;
   const heightA = 40;
   //Paginacion
-  const postPerPage = 3;
+  const postPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
   const startIndex = (currentPage - 1) * postPerPage;
   const endIndex = startIndex + postPerPage;
