@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import { Button } from "react-bootstrap";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -89,7 +90,7 @@ const Blog = ({ posts }) => {
           </div>
         </div>
       </div>
-      <main className="masonary-blog-section ptb-120">
+      <main className="masonary-blog-section ptb-60">
         <div className="container">
           <div className="row">
             {visiblePost.map((post) => (
@@ -146,14 +147,15 @@ const Blog = ({ posts }) => {
         </div>
       </main>
       <div className="container">
-        <div className="row justify-content-center align-items-center mt-5">
+        <div className="row justify-content-center align-items-center mt-3">
           <div className="col-auto my-1">
             {/* Enlace a la página anterior */}
 
             {currentPage > 1 && (
-              <button onClick={() => setCurrentPage(currentPage - 1)}>
+              <Button  className="btn-primary"
+              onClick={() => setCurrentPage(currentPage - 1)}>
                 Previous
-              </button>
+              </Button>
             )}
           </div>
           <div className="col-auto my-1">
@@ -168,9 +170,10 @@ const Blog = ({ posts }) => {
                         index + 1 === currentPage ? "active" : ""
                       }`}
                     >
-                      <button onClick={() => setCurrentPage(index + 1)}>
+                      <Button variant="outline-secondary" 
+                       onClick={() => setCurrentPage(index + 1)}>
                         {index + 1}
-                      </button>
+                      </Button>
                     </li>
                   )
                 )}
@@ -180,9 +183,10 @@ const Blog = ({ posts }) => {
           <div className="col-auto my-1">
             {/* Enlace a la página siguiente */}
               {currentPage < Math.ceil(posts.length / postPerPage) && (
-              <button onClick={() => setCurrentPage(currentPage + 1)}>
+              <Button className="btn-primary" 
+               onClick={() => setCurrentPage(currentPage + 1)}>
                 Next
-              </button>
+              </Button>
             )}
           </div>
         </div>
