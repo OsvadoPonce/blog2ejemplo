@@ -51601,6 +51601,7 @@ li.setup-process-item:not(:last-child):before {
 /* line 1944, src/assets/scss/custom/_style.scss */
 .about-content-right .about-img-last {
   max-width: 126%;
+  height: auto;
   margin-top: auto;
   -ms-flex-item-align: end;
       align-self: flex-end;

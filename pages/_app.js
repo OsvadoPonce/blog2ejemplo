@@ -1,9 +1,9 @@
-//import '@/styles/globals.css'
 import { useEffect } from "react";
-import "@/styles/feature.css"
-import "@/styles/custom.css"
-import "@/styles/main.css"
-import '@fortawesome/fontawesome-free/css/all.css';
+import "@/styles/custom.css";
+import "@/styles/feature.css";
+import "@/styles/Home.module.css";
+import "@/styles/main.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -15,5 +15,5 @@ export default function App({ Component, pageProps }) {
       offset: 50,
     });
   }, []);
-  return <Component {...pageProps} />
+  return <Component {...pageProps} />;
 }

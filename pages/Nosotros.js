@@ -103,8 +103,6 @@ const Nosotros = () => {
                       src={imgswarm}
                       alt="about"
                       className="rounded-custom about-img-last shadow"
-                      height="650"
-                      width="1000"
                     />
                   </div>
                 </div>
