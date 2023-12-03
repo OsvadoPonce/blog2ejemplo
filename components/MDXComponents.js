@@ -1,5 +1,5 @@
-import { MdxPage } from "./estilos";
+import { MdxPage, MdxPageImagen1, MdxPageImagen2 } from "./estilos";
 
 export default {
-    MdxPage,
+    MdxPage, MdxPageImagen1, MdxPageImagen2
 };
