@@ -5,7 +5,18 @@ import Preloader from "./Preloader";
 import $ from "jquery";
 import Image from "next/image";
 
-export const MdxPage = ({ children, title, job, author, description, date, image
+export const MdxPage = ({
+  children,
+  title,
+  job,
+  author,
+  description,
+  date,
+  image,
+  facebook,
+  linkedin,
+  instagram,
+  tiktok,
 }) => {
   useEffect(() => {
     $(document).ready(function () {
@@ -45,9 +56,7 @@ export const MdxPage = ({ children, title, job, author, description, date, image
               <div className="col-lg-8 pe-lg-5">
                 <div class="blog-details-wrap">
                   <div class="blog-details-info mt-5">
-                    <div class="job-details-info mt-5">
-                      {children}
-                    </div>
+                    <div class="job-details-info mt-5">{children}</div>
                   </div>
                 </div>
               </div>
@@ -69,22 +78,22 @@ export const MdxPage = ({ children, title, job, author, description, date, image
                   <p>{description}</p>
                   <ul className="list-unstyled author-social-list list-inline mt-3 mb-0">
                     <li className="list-inline-item">
-                      <a href="#">
+                      <a href={linkedin} target="_blank">
                         <i className="fab fa-linkedin-in"></i>
                       </a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">
-                        <i className="fab fa-twitter"></i>
+                      <a href={tiktok} target="_blank">
+                        <i className="fab fa-tiktok"></i>
                       </a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">
-                        <i className="fab fa-github"></i>
+                      <a href={instagram} target="_blank">
+                        <i className="fab fa-instagram"></i>
                       </a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">
+                      <a href={facebook} target="_blank">
                         <i className="fab fa-facebook-f"></i>
                       </a>
                     </li>
@@ -101,7 +110,6 @@ export const MdxPage = ({ children, title, job, author, description, date, image
 };
 
 export const MdxPageImagen1 = ({ image1 }) => {
-
   const widthImage = 500;
   const heightImage = 300;
 
@@ -114,15 +122,15 @@ export const MdxPageImagen1 = ({ image1 }) => {
             alt="primera_imagen"
             width={widthImage}
             height={heightImage}
-            class="img-fluid mt-4 rounded-custom" />
+            class="img-fluid mt-4 rounded-custom"
+          />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const MdxPageImagen2 = ({ image2 }) => {
-
   const widthImage = 500;
   const heightImage = 300;
 
@@ -135,9 +143,10 @@ export const MdxPageImagen2 = ({ image2 }) => {
             alt="primera_imagen"
             width={widthImage}
             height={heightImage}
-            class="img-fluid mt-4 rounded-custom" />
+            class="img-fluid mt-4 rounded-custom"
+          />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
