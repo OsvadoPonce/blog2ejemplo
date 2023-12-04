@@ -62,7 +62,11 @@ export const MdxPage = ({
               </div>
 
               <div className="col-lg-4">
-                <div className="author-wrap text-center bg-light p-5 sticky-sidebar rounded-custom mt-5 mt-lg-0">
+                <div className="author-wrap text-center p-5 sticky-sidebar rounded-custom mt-5 mt-lg-0"
+                  style={{
+                    backgroundColor: '#f8f9fa'
+                  }}
+                >
                   <Image
                     src={`/${image}`}
                     alt="author"
